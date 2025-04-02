@@ -31,7 +31,7 @@ def add_subscriber(user_id):
 @bot.message_handler(commands=['start'])
 def handle_start(message):
     add_subscriber(message.from_user.id)
-    bot.reply_to(message, "Привет! Вы успешно подписались на фразу дня.")
+    bot.reply_to(message, "Привет! Я Maxie – твой дружелюбный помощник в мире английского. Каждый день я буду рад присылать тебе новое слово, интересные фразы и полезные советы")
 
 def run_bot():
     init_db()
